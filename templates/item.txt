@@ -1,0 +1,12 @@
+{% if request.user.is_authenticated %}
+                {% if product|is_wishlist:request %}
+                    <li>
+                        <a href="{% url 'shop:wishlist' pk=product.pk %}?next={{request.path}}"><img src="{% static 'img/icon/heart.png'%}" alt=""></a>
+                    </li>
+
+                {% else %}
+                <li>
+                    <a href="{% url 'shop:wishlist' pk=product.pk %}?next={{request.path}}"><img src="{% static 'img/black_heart.jpg'%}" alt=""></a>
+                </li>
+                {% endif %}
+            {% endif %}

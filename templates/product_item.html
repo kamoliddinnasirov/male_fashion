@@ -1,0 +1,58 @@
+{% load static %}
+
+
+
+<div class="product__item sale">
+    <div class="product__item__pic set-bg" data-setbg="{{ product.main_image.url}}">
+        {% if product.is_discount %}
+            <span class="label">Sale</span>
+        {% endif %}
+        {% if product.new %}
+            <span class="label">New</span>
+        {% endif %}
+        <ul class="product__hover">
+            {% if request.user.is_authenticated %}
+                {% if product|is_wishlist:request %}
+                    <li>
+                        <a href="{% url 'shop:wishlist' pk=product.pk %}?next={{request.path}}"><img src="{% static 'img/icon/heart.png'%}" alt=""></a>
+                    </li>
+
+                {% else %}
+                <li>
+                    <a href="{% url 'shop:wishlist' pk=product.pk %}?next={{request.path}}"><img src="{% static 'img/black_heart.jpg'%}" alt=""></a>
+                </li>
+                {% endif %}
+            {% endif %}
+            
+            <li><a href="{% url 'shop:detail' pk=product.pk %}"><img src="{% static 'img/icon/search.png'%}" alt=""></a></li>
+        </ul>
+    </div>
+    <div class="product__item__text">
+        <h6>{{ product.title }}</h6>
+        <a href="{% url 'shop:cart' id=product.pk%}?next={{request.path}}" class="add-cart">
+            {% if product|is_cart:request%}
+                -Remove From Cart
+            {% else %}
+                + Add To Cart
+            {% endif %}
+        
+        </a>
+        <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-o"></i>
+        </div>
+        <h5>${{ product.real_price }} {% if product.is_discount %}
+            <del class="text-secondary">{{ product.price }}</del>{% endif %}
+        </h5>
+        <div class="product__color__select">
+           {% for color in product.colors.all %}
+                <label style="" for="{{ color.code }}">
+                    <input type="radio" id="{{ color.code }}">
+                </label>
+            {% endfor %}
+        </div>
+    </div>
+</div>
