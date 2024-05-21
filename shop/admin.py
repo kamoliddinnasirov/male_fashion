@@ -50,6 +50,10 @@ class CategoryAdmin(admin.ModelAdmin):
 class Product(admin.ModelAdmin):
     list_display = ("title", "price")
     list_display_links = ("title", "price")
+    list_filter = ['created_at']
+    search_fields = ("title", 'price')
+    autocomplete_fields = ['category', 'tags', 'sizes', 'colors']
+    readonly_fields = ['real_price', 'sale']
 
 
 # class ProductAdmin(TranslationAdmin):
