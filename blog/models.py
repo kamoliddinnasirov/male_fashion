@@ -50,7 +50,7 @@ class Comment(BaseModel):
     name = models.CharField(max_length=255, verbose_name=_("name"))
     email = models.EmailField(verbose_name=_("email"))
     phone = models.CharField(max_length=13, verbose_name=_("phone"))
-    comment = models.TextField(verbose_name=_("comment", null=True))
+    comment = models.TextField(verbose_name=_("comment"))
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="comments", verbose_name=_("post"))
 
 
