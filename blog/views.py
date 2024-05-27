@@ -28,8 +28,8 @@ class CommentView(CreateView):
     form_class = CommentForm
 
     def form_valid(self, form):
-        print(form.instance)
-        form.instance.post = get_object_or_404(Post, pk=self.kwargs.get("pk"))
+        # print(form.instance)
+        # form.instance.post = get_object_or_404(Post, pk=self.kwargs.get("pk"))
         return super().form_valid(form)
     
     def get_success_url(self) -> str:
