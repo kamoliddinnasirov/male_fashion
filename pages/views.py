@@ -1,7 +1,7 @@
 from typing import Any
 from django.shortcuts import render
 from pages.forms import ContactForm
-from pages.models import Banner
+from pages.models import Banner, MainSM, MainSMImage
 from django.views.generic import TemplateView, CreateView
 from blog.models import Post
 from django.urls import reverse
@@ -14,6 +14,8 @@ class HomePage(TemplateView):
         data = super().get_context_data(**kwargs)
         data['posts'] = Post.objects.order_by("-pk")[:3]
         data['banners'] = Banner.objects.filter(is_active=True).order_by("-id")
+        data['medias'] = MainSM.objects.all()
+        data['images'] = MainSMImage.objects.all()
         return data
     
 
