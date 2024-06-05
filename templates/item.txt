@@ -9,4 +9,4 @@
                     <a href="{% url 'shop:wishlist' pk=product.pk %}?next={{request.path}}"><img src="{% static 'img/black_heart.jpg'%}" alt=""></a>
                 </li>
                 {% endif %}
-            {% endif %}
+{% endif %}
