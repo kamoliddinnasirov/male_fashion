@@ -35,6 +35,8 @@ CUSTOM_APPS = [
     'shop',
     'blog',
     'pages',
+    'orders',
+    'users'
 ]
 
 
@@ -53,6 +55,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
 ]
 
 ROOT_URLCONF = 'core.urls'
@@ -71,7 +74,9 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
-
+            'libraries':{
+                'my_templatetags': 'shop.templatetags.my_tags',
+            }
        
         },
     },
@@ -115,6 +120,16 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
+LANGUAGES = (
+    ('en', '🇬🇧 English'),
+    ('ru', '🇷🇺 Russian'),
+    ('uz', '🇺🇿 Uzbek'),
+)
+
+LOCALE_PATHS = BASE_DIR / 'locale',
+
+MODELTRANSLATION_DEFAULT_LANGUAGE = 'en'
+
 TIME_ZONE = 'Asia/Tashkent'
 
 USE_I18N = True
@@ -135,6 +150,12 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
 # AUTH_USER_MODEL = "users.UserModel"
+AUTH_USER_MODEL = 'users.UserModel'
+
+
+
 CRISPY_TEMPLATE_PACK = "bootstrap4"
+
+
+

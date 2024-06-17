@@ -17,5 +17,5 @@ def set_sale(sender, instance, *args, **kwargs):
     if instance.is_discount():
         instance.sale = True
     else:
-        instance.sale = True
+        instance.sale = False
 
