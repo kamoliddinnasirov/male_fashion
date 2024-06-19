@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-14 12:02+0500\n"
+"POT-Creation-Date: 2024-06-18 16:07+0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,238 +16,236 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
-"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
-"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: blog/models.py:7
 msgid "full name"
-msgstr "полное имя"
+msgstr "vollständiger Name"
 
 #: blog/models.py:8 pages/models.py:26 pages/models.py:40
 msgid "image"
-msgstr "изображение"
+msgstr "Bild"
 
 #: blog/models.py:12
 msgid "Author"
-msgstr "Автор"
+msgstr ""
 
 #: blog/models.py:13
 msgid "Authors"
-msgstr "Авторы"
+msgstr ""
 
 #: blog/models.py:21 blog/models.py:50 pages/models.py:8 shop/models.py:12
 #: shop/models.py:25 shop/models.py:38 shop/models.py:50 shop/models.py:62
 msgid "name"
-msgstr "имя"
+msgstr ""
 
 #: blog/models.py:24
 msgid "Tag"
-msgstr "Тег"
+msgstr ""
 
 #: blog/models.py:25
 msgid "Tags"
-msgstr "Теги"
+msgstr ""
 
 #: blog/models.py:33 pages/models.py:24 pages/models.py:51 shop/models.py:74
 msgid "title"
-msgstr "заголовок"
+msgstr ""
 
 #: blog/models.py:34
 msgid "body"
-msgstr "описание"
+msgstr ""
 
 #: blog/models.py:35 shop/models.py:81
 msgid "main image"
-msgstr "основное изображение"
+msgstr ""
 
 #: blog/models.py:37 pages/models.py:53
 msgid "tag"
-msgstr "Тег"
+msgstr ""
 
 #: blog/models.py:42
 msgid "Post"
-msgstr "Поcт"
+msgstr ""
 
 #: blog/models.py:43
 msgid "Posts"
-msgstr "Посты"
+msgstr ""
 
 #: blog/models.py:51 pages/models.py:9
 msgid "email"
-msgstr "электронная почта"
+msgstr ""
 
 #: blog/models.py:52
 msgid "phone"
-msgstr "телефон"
+msgstr ""
 
 #: blog/models.py:53
 msgid "comment"
-msgstr "комментарий"
+msgstr ""
 
 #: blog/models.py:54
 msgid "post"
-msgstr "Поcт"
+msgstr ""
 
 #: blog/models.py:58
 msgid "Comment"
-msgstr "Комментарий"
+msgstr ""
 
 #: blog/models.py:59
 msgid "Comments"
-msgstr "Комментарии"
+msgstr ""
 
 #: pages/models.py:10
 msgid "message"
-msgstr "сообщение"
+msgstr ""
 
 #: pages/models.py:23
 msgid "collection"
-msgstr "коллекция"
+msgstr ""
 
 #: pages/models.py:25 pages/models.py:52
 msgid "description"
-msgstr "описание"
+msgstr ""
 
 #: pages/models.py:27
 msgid "is active"
-msgstr "активен"
+msgstr ""
 
 #: pages/models.py:43
 msgid "Social Media Image"
-msgstr "Изображение в социальных сетях"
+msgstr ""
 
 #: pages/models.py:44
 msgid "Social Media Images"
-msgstr "Изображения в социальных сетях"
+msgstr ""
 
 #: pages/models.py:55
 msgid "link"
-msgstr "ссылка"
+msgstr ""
 
 #: pages/models.py:59
 msgid "Social Media"
-msgstr "Социальные медиа"
+msgstr ""
 
 #: pages/models.py:60
 msgid "Social Medias"
-msgstr "Социальные сети"
+msgstr ""
 
 #: shop/abstract.py:5
 msgid "created at"
-msgstr "создан в"
+msgstr ""
 
 #: shop/abstract.py:6
 msgid "updated at"
-msgstr "обновлено в"
+msgstr ""
 
 #: shop/models.py:75
 msgid "short description"
-msgstr "Краткое описание"
+msgstr ""
 
 #: shop/models.py:76
 msgid "long description"
-msgstr "длинное описание"
+msgstr ""
 
 #: shop/models.py:77
 msgid "price"
-msgstr "цена"
+msgstr ""
 
 #: shop/models.py:78
 msgid "real price"
-msgstr "реальная цена"
+msgstr ""
 
 #: shop/models.py:79
 msgid "sale"
-msgstr "распродажа"
+msgstr ""
 
 #: shop/models.py:80
 msgid "discount"
-msgstr "скидка"
+msgstr ""
 
 #: shop/models.py:86
 msgid "category"
-msgstr "категория"
+msgstr ""
 
 #: shop/models.py:91
 msgid "tags"
-msgstr "теги"
+msgstr ""
 
 #: shop/models.py:96
 msgid "sizes"
-msgstr "размеры"
+msgstr ""
 
 #: shop/models.py:101
 msgid "colors"
-msgstr "цвета"
+msgstr ""
 
 #: shop/models.py:107
 msgid "brand"
-msgstr "бренд"
+msgstr ""
 
 #: shop/models.py:140
 msgid "user"
-msgstr "пользователь"
+msgstr ""
 
 #: shop/models.py:141
 msgid "product"
-msgstr "продукт"
+msgstr ""
 
 #: templates/layouts/navbar.html:20 templates/layouts/navbar.html:62
 msgid "Sign in"
-msgstr "Войти"
+msgstr ""
 
 #: templates/layouts/navbar.html:58
 msgid "Order History"
-msgstr "История заказов"
+msgstr ""
 
 #: templates/layouts/navbar.html:59
 msgid "Profile"
-msgstr "Профиль"
+msgstr ""
 
 #: templates/layouts/navbar.html:60
 msgid "Log out"
-msgstr "Выйти"
+msgstr ""
 
 #: templates/layouts/navbar.html:98
 msgid "Home"
-msgstr "Главный"
+msgstr ""
 
 #: templates/layouts/navbar.html:105
 msgid "Blog"
-msgstr "Блог"
+msgstr ""
 
 #: templates/layouts/navbar.html:108
 msgid "Contacts"
-msgstr "Контакты"
+msgstr ""
 
 #: users/forms.py:15
 msgid "Phone number"
-msgstr "Номер телефона"
+msgstr ""
 
 #: users/forms.py:16
 msgid "Password"
-msgstr "Пароль"
+msgstr ""
 
 #: users/validators.py:45
 msgid "The value entered is not a phone number."
-msgstr "Введенное значение не является номером телефона."
+msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/contrib/messages/apps.py:16
 msgid "Messages"
-msgstr "Сообщения"
+msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/contrib/sitemaps/apps.py:8
 msgid "Site Maps"
-msgstr "Карты сайта"
+msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/contrib/staticfiles/apps.py:9
 msgid "Static Files"
-msgstr "Статические файлы"
+msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/contrib/syndication/apps.py:7
 msgid "Syndication"
-msgstr "Синдикация"
+msgstr ""
 
 #. Translators: String used to replace omitted page numbers in elided page
 #. range generated by paginators, e.g. [1, 2, '…', 5, 6, 7, '…', 9, 10].
@@ -1437,15 +1435,15 @@ msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:239
 msgid "Get started with Django"
-msgstr "Начните работу с Джанго"
+msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:247
 msgid "Django Community"
-msgstr "Сообщество Джанго"
+msgstr ""
 
 #: venv/lib/python3.10/site-packages/django/views/templates/default_urlconf.html:248
 msgid "Connect, get help, or contribute"
-msgstr "Подключайтесь, получайте помощь или вносите свой вклад"
+msgstr ""
 
 #: venv/lib/python3.10/site-packages/modeltranslation/widgets.py:24
 msgid "None"

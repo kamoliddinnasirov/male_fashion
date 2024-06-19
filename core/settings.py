@@ -124,6 +124,7 @@ LANGUAGES = (
     ('en', '🇬🇧 English'),
     ('ru', '🇷🇺 Russian'),
     ('uz', '🇺🇿 Uzbek'),
+    ("de", "German"),
 )
 
 LOCALE_PATHS = BASE_DIR / 'locale',
@@ -154,8 +155,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'users.UserModel'
 
 
-
-CRISPY_TEMPLATE_PACK = "bootstrap4"
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 
 
